@@ -1,10 +1,10 @@
-input = open("d.txt", "r")
-output = open("01.txt", "w")
+inp = open("purchases.txt", "r")
+out = open("01.txt", "w")
 
-for line in input:
+for line in inp:
     datalist = line.strip().split("    ")
     date, time,store, item, cost, paymentType = datalist
-    output.write(store + "\t" + cost + "\n")
+    out.write(paymentType + "\t" + cost + "\n")
 
-input.close()
-output.close()
+inp.close()
+out.close()
